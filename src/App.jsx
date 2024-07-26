@@ -38,8 +38,8 @@ const App = () => {
 		<div className="app">
 			<Logo />
 			<Form addItem={addItem} />
-			<PackingList items={items} handleDelete={handleDelete} handleUpdate={handleUpdate} />
-			<Stats />
+			<PackingList items={items} setItems={setItems} handleDelete={handleDelete} handleUpdate={handleUpdate} />
+			<Stats items={items} />
 		</div>
 	);
 };
